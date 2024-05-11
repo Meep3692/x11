@@ -7,3 +7,5 @@ build
 /out/
 # I don't know why the vscode extension does this
 **/bin
+
+target

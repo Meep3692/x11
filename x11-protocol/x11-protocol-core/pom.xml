@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.moaxcp.x11.x11-protocol</groupId>
+  <artifactId>x11-protocol-core</artifactId>
+  <version>0.17.0</version>
+  <name>x11-protocol-core</name>
+  <description>Core classes for implementing the x11 protocol in java</description>
+<properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+<parent>
+    <groupId>com.github.moaxcp.x11</groupId>
+    <artifactId>x11-protocol</artifactId>
+    <version>0.17.0</version>
+  </parent>
+  <url>https://github.com/moaxcp/x11</url>
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>http://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>moaxcp</id>
+      <name>John Mercier</name>
+      <email>moaxcp@gmail.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/moaxcp/x11.git</connection>
+    <developerConnection>scm:git:git@github.com:moaxcp/x11.git</developerConnection>
+    <url>https://github.com/moaxcp/x11</url>
+  </scm>
+</project>

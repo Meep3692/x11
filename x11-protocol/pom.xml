@@ -1,0 +1,138 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.github.moaxcp.x11</groupId>
+    <artifactId>x11-protocol</artifactId>
+    <version>0.17.0</version>
+    <packaging>pom</packaging>
+    
+    <modules>
+        <module>
+        x11-protocol-bigreq
+        </module>
+        <module>
+        x11-protocol-composite
+        </module>
+        <module>
+        x11-protocol-core
+        </module>
+        <module>
+        x11-protocol-damage
+        </module>
+        <module>
+        x11-protocol-dpms
+        </module>
+        <module>
+        x11-protocol-dri2
+        </module>
+        <module>
+        x11-protocol-dri3
+        </module>
+        <module>
+        x11-protocol-ge
+        </module>
+        <module>
+        x11-protocol-glx
+        </module>
+        <module>
+        x11-protocol-present
+        </module>
+        <module>
+        x11-protocol-randr
+        </module>
+        <module>
+        x11-protocol-record
+        </module>
+        <module>
+        x11-protocol-render
+        </module>
+        <module>
+        x11-protocol-res
+        </module>
+        <module>
+        x11-protocol-screensaver
+        </module>
+        <module>
+        x11-protocol-shape
+        </module>
+        <module>
+        x11-protocol-shm
+        </module>
+        <module>
+        x11-protocol-sync
+        </module>
+        <module>
+        x11-protocol-xcmisc
+        </module>
+        <module>
+        x11-protocol-xevie
+        </module>
+        <module>
+        x11-protocol-xf86dri
+        </module>
+        <module>
+        x11-protocol-xf86vidmode
+        </module>
+        <module>
+        x11-protocol-xfixes
+        </module>
+        <module>
+        x11-protocol-xinerama
+        </module>
+        <module>
+        x11-protocol-xinput
+        </module>
+        <module>
+        x11-protocol-xkb
+        </module>
+        <module>
+        x11-protocol-xprint
+        </module>
+        <module>
+        x11-protocol-xproto
+        </module>
+        <module>
+        x11-protocol-xselinux
+        </module>
+        <module>
+        x11-protocol-xtest
+        </module>
+        <module>
+        x11-protocol-xv
+        </module>
+        <module>
+        x11-protocol-xvmc
+        </module>
+    </modules>
+    
+    <properties>
+        <!-- Define project properties here -->
+    </properties>
+<parent>
+    <groupId>com.github.moaxcp.x11</groupId>
+    <artifactId>x11</artifactId>
+    <version>0.17.0</version>
+  </parent>
+    
+    <dependencyManagement>
+        <dependencies>
+            <!-- Define managed dependencies here -->
+        </dependencies>
+    </dependencyManagement>
+    
+    <build>
+        <!-- Configure build settings here -->
+    </build>
+    
+    <repositories>
+        <!-- Add project repositories here -->
+    </repositories>
+    
+    <pluginRepositories>
+        <!-- Add project plugin repositories here -->
+    </pluginRepositories>
+    
+</project>
