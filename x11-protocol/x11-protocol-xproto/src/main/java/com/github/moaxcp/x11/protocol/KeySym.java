@@ -5,6 +5,22 @@ import java.util.Map;
 
 @SuppressWarnings("java:S115")
 public enum KeySym implements IntValue {
+  DXK_ring_accent(0x1000FEB0),
+
+  DXK_circumflex_accent(0x1000FE5E),
+
+  DXK_cedilla_accent(0x1000FE2C),
+
+  DXK_acute_accent(0x1000FE27),
+
+  DXK_grave_accent(0x1000FE60),
+
+  DXK_tilde(0x1000FE7E),
+
+  DXK_diaeresis(0x1000FE22),
+
+  DXK_Remove(0x1000FF00),
+
   hpXK_ClearLine(0x1000FF6F),
 
   hpXK_InsertLine(0x1000FF70),
@@ -602,22 +618,6 @@ public enum KeySym implements IntValue {
   XF86XK_LogWindowTree(0x1008FE24),
 
   XF86XK_LogGrabInfo(0x1008FE25),
-
-  DXK_ring_accent(0x1000FEB0),
-
-  DXK_circumflex_accent(0x1000FE5E),
-
-  DXK_cedilla_accent(0x1000FE2C),
-
-  DXK_acute_accent(0x1000FE27),
-
-  DXK_grave_accent(0x1000FE60),
-
-  DXK_tilde(0x1000FE7E),
-
-  DXK_diaeresis(0x1000FE22),
-
-  DXK_Remove(0x1000FF00),
 
   NoSymbol(0x000000),
 
