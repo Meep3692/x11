@@ -3,10 +3,10 @@ package com.github.moaxcp.x11protocol.generator
 import com.squareup.javapoet.ClassName
 
 class KeySymResult {
-  String keysymPackage
+  String basePackage
   Map<String, String> keysyms = [:]
 
   ClassName getClassName() {
-    ClassName.get(keysymPackage, "KeySym")
+    ClassName.get(basePackage, "KeySym")
   }
 }

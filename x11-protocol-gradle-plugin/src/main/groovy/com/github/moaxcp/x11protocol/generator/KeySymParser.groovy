@@ -1,17 +1,15 @@
 package com.github.moaxcp.x11protocol.generator
 
-
+import com.github.moaxcp.x11protocol.generator.KeySymResult
 import com.squareup.javapoet.*
 
 import javax.lang.model.element.Modifier
 
 class KeySymParser {
     KeySymResult result
-    String corePackage
 
-    KeySymParser(String corePackage, String keysymPackage) {
-        this.corePackage = corePackage
-        result = new KeySymResult(keysymPackage: keysymPackage)
+    KeySymParser(String basePackage) {
+        result = new KeySymResult(basePackage: basePackage)
     }
 
     KeySymResult merge(BufferedReader input) {
@@ -58,7 +56,7 @@ class KeySymParser {
         return TypeSpec.enumBuilder(result.className)
             .addAnnotation(AnnotationSpec.builder(SuppressWarnings).addMember('value', '"java:S115"').build())
             .addModifiers(Modifier.PUBLIC)
-            .addSuperinterface(ClassName.get(corePackage, 'IntValue'))
+            .addSuperinterface(ClassName.get(result.basePackage, 'IntValue'))
             .addField(FieldSpec.builder(TypeName.INT, 'value', Modifier.PRIVATE).build())
             .addMethod(MethodSpec.constructorBuilder()
                 .addParameter(TypeName.INT, 'value')

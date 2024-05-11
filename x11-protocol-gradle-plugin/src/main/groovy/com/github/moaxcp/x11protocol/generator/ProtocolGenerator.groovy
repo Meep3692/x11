@@ -32,7 +32,7 @@ class ProtocolGenerator {
         File services = new File(outputResources, "META-INF/services/${basePackage}.XProtocolPlugin")
         services.parentFile.mkdirs()
 
-        services.write("$pluginClass\n")
+        services.append("$pluginClass\n")
     }
 
     private void writeToFile(String javaPackage, Collection<XTypeUnit> units) {
