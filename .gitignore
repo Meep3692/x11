@@ -5,3 +5,5 @@
 build
 /lombok.config
 /out/
+# I don't know why the vscode extension does this
+**/bin

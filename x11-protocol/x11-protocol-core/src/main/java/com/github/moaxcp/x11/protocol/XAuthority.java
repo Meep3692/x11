@@ -98,7 +98,14 @@ public class XAuthority {
       Family family = Family.getByCode(in.readUnsignedShort());
       int dataLength = in.readUnsignedShort();
       List<Byte> address = readBytes(in, dataLength);
-      int number = Integer.parseInt(in.readUTF());
+      dataLength = in.readUnsignedShort();
+      List<Byte> numberBytes = readBytes(in, dataLength);
+      int number;
+      if(dataLength == 0){
+        number = 0;
+      } else {
+        number = Integer.parseInt(Utilities.toString(numberBytes, StandardCharsets.UTF_8));
+      }
       dataLength = in.readUnsignedShort();
       List<Byte> name = readBytes(in, dataLength);
       dataLength = in.readUnsignedShort();
